@@ -14,6 +14,7 @@
 
 <script setup>
 import {reactive} from 'vue'
+import router from "../router/index"
 
 const auth= reactive ({
     phone_number: "",
@@ -30,6 +31,7 @@ async function onSubmit(){
     let result = await response.json()
     console.log(result)
     localStorage.setItem('token',result.token)
+    router.push('/orders')
 }
 
 </script>
