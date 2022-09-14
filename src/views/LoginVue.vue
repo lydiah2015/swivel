@@ -45,7 +45,8 @@ async function onSubmit(){
 }
 input[type=text]  {
   padding: 10px;
-    margin:10px 0;
+  margin-top: 100px;
+    /* margin:10px 0; */
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 input[type=password]  {
@@ -79,7 +80,7 @@ button {
   /* usual styles */
   padding:10px;
   border:none;
-  background-color:green;
+  background-color:teal;
   color:#fff;
   font-weight:600;
   border-radius:5px;

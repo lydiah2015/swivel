@@ -60,6 +60,10 @@ async function convertToProject(orderId){
 
 
 <style scoped>
+h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 table {
   border-collapse: collapse;
   margin-left: auto;
