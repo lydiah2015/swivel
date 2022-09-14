@@ -1,11 +1,11 @@
 <template>
-<h1>ORDERS</h1>
+<h3>ORDERS</h3>
 
 <table>
     <tr>
         <th> Name </th>
         <th>Description</th>
-        <th>Satus</th>
+        <th>Status</th>
         <th> action</th>
 
     </tr>
@@ -57,3 +57,24 @@ async function convertToProject(orderId){
 }
 
 </script>
+
+
+<style scoped>
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td {
+  border: 1px solid black;
+padding: 8px;
+
+}
+ th {
+  width: 25%;
+} 
+h3{
+    text-decoration-line: underline;
+    
+}
+</style>

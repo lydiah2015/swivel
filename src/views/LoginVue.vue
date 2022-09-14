@@ -1,7 +1,8 @@
 <template>
- <form>
-     <div>
-        <input type='text' placeholder="username" v-model="auth.phone_number"/>
+
+<form>
+     <div >
+        <input type='text' placeholder="username" class="signup-text-input" v-model="auth.phone_number"/>
      </div>
 
      <div>
@@ -35,3 +36,55 @@ async function onSubmit(){
 }
 
 </script>
+
+
+<style scoped>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+input[type=text]  {
+  padding: 10px;
+    margin:10px 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=password]  {
+  padding: 10px;
+    margin:10px 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+
+.border-bottom-input {
+  border:0; 
+  border-bottom:1px solid #eee;
+}
+.rounded-input {
+  padding:10px;
+  border-radius:10px;
+}
+input {
+  width:25%;
+}
+input, textarea {
+  font-family:inherit;
+  font-size: inherit;
+}
+button {
+
+  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color:green;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:5%;
+
+}
+
+</style>
